@@ -1,11 +1,11 @@
-##unique number
 n=int(input())
-f=0
+
 c=0
 t=n
 for i in range(1,10):
     f=0
     t=n
+    
     while t!=0:
         #print(i)
         r=t%10
@@ -22,5 +22,4 @@ if(c==0):
     print("Unique Number")
 else:
     print("Not Unique Number")
-
-        
+        #
