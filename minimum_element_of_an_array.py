@@ -6,3 +6,4 @@ for i in range (1,n):#for i in a:
     if(a[i]<min):    #if i<m:
         min=a[i]     #m=i
 print(min)
+
