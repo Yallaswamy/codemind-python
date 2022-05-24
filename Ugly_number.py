@@ -9,6 +9,7 @@ def ugly_num(n):
         return ugly_num(n//5)
     else:
         return 0
+        
 n=int(input())
 if(ugly_num(n)):
     print("Ugly Number")
