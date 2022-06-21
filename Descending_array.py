@@ -1,12 +1,13 @@
 n=int(input())
 a=list(map(int,input().split()))
-i=1
-m=1
-while(i<len(a)):
-    if(a[i]>a[i-1]):
+m=0
+for i in range(1,n):
+    if(a[i]<a[i-1]):
+        m=1
+    else:
         m=0
-    i=i+1
-if(m==0):
-    print("no")
-elif(m==1):
+        break
+if(m==1):
     print("yes")
+elif(m==0):
+    print("no")
