@@ -3,6 +3,15 @@ n=n.split()
 n="".join(n)
 n=n.lower()
 n=sorted(n)
+b=[]
+
 for i in n:
-    if(n.count(i)==1):
+    if(i not in b):
+        b.append(i)
         print(i,end="")
+
+    
+    
+        
+
+
