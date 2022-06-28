@@ -1,8 +1,14 @@
-a=int(input())
-b=int(input())
-for i in range(a+1,b+1):
-    for j in range(2,i):
-        if(i%j==0):
-            break
-    else:
-              print(i)
+def prime(n):
+    if(n>1):
+        for i in range(2,int(n**0.5)+1):
+            if(n%i==0):
+                return 0
+        else:
+            return 1
+        
+n=int(input())
+m=int(input())
+for i in range(n,m+1):
+        if(prime(i)):
+            print(i)
+            
