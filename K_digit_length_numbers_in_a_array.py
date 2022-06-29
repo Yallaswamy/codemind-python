@@ -1,15 +1,12 @@
-a,b=map(int,input().split())
-c=list(map(int,input().split()))
-#print(a,b,c)
-d=0
-for i in c:
+n,k=map(int,input().split())
+a=list(map(int,input().split()))
+p=0
+for i in a:
     if(i<0):
-        i=i*(-1)
-    k=len(str(i))
-    if(k==a or k==b):
-        d=d+1
+        i=i*-1
+        if(k==len(str(i))):
+            p=p+1
     else:
-         k=len(str(i))
-         if(k==a or k==b):
-             d=d+1
-print(d)
+        if(k==len(str(i))):
+            p=p+1
+print(p)
