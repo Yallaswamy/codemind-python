@@ -1,14 +1,10 @@
 n=int(input())
-
-c=[]
-k=0
 a=list(map(int,input().split()))
+c=0
+for i in range(n-2):
+    if(a[i]%2!=0 and a[i+1]%2!=0 and a[i+2]%2!=0):
+        c=c+1
+print(c)
 
-for i in range(0,n):
-    if(i%2==0):
-        c.append(a[i])
-for i in c:
-    if(i%2!=0):
-        k+=1
-print(k)
+        
         
