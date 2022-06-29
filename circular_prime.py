@@ -1,9 +1,11 @@
 ##twisted prime
 
 n=int(input())
+k=0
 for i in range(2,int(n**0.5)+1):
     if(n%i==0):
         print("not prime")
+        k=1
         break
 else:
     m=n
@@ -15,7 +17,7 @@ else:
         #print(r)
         rev=rev*10+r
         m=m//10
-   # print(rev)
+    #print(rev)
     o=rev
     s=0
     for j in range (2,int(o**0.5)+1):
@@ -23,5 +25,10 @@ else:
             s=1
             print("prime but not a circular prime")
             break
-    else:
+    if(s==0):
         print("circular prime")
+
+        
+
+        
+        
