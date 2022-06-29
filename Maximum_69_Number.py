@@ -1,10 +1,8 @@
-n=int(input())
-a=[]
+n=input()
+c=0
 for i in str(n):
-    a.append(int(i))
-for i in range(len(a)):
-    if(a[i]==6):
-        a[i]=9
-        break
-for i in range(len(a)):
-    print(a[i],end="")
+    if(c==0):
+        if(int(i)==6):
+            i=9
+            c=c+1
+    print(i,end="")
