@@ -6,3 +6,4 @@ for i in str(n):
             i=9
             c=c+1
     print(i,end="")
+    
