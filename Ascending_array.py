@@ -1,13 +1,10 @@
 n=int(input())
 a=list(map(int,input().split()))
-m=0
-for i in range(1,n):
-    if(a[i]>a[i-1]):
-        m=1
-    else:
-        m=0
-        break
-if(m==1):
+c=0
+for i in range(n-1):
+    if(a[i]<a[i+1]):
+        c=c+1
+if(c+1==n):
     print("yes")
-elif(m==0):
+else:
     print("no")
