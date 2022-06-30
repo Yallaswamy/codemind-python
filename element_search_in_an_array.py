@@ -1,15 +1,13 @@
 n=int(input())
-f=0
 a=list(map(int,input().split()))
-m=int(input())
+x=int(input())
+f=0
 for i in a:
-    if(i==m):
-       f=1
-       break
+    if(x in a):
+        f=1
     else:
         f=0
 if(f==1):
-     print(True)
+    print(True)
 else:
-     print(False)
-        
+    print(False)
