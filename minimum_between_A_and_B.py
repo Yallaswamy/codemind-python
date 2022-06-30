@@ -1,16 +1,14 @@
 n=int(input())
-a=list(map(int,input().split()))
-#print(a)
-x,y=map(int,input().split())
-#print(x,y)
-b=[]
+m=list(map(int,input().split()))
+a,b=map(int,input().split())
+
 c=0
-for i in a:
-    if i in range(x,y+1):
-        b.append(i)
+d=[]
+for i in m:
+    if(i in range(a,b+1)):
+        d.append(i)
         c=c+1
-#print(b)
-if(c==0):
-    print(-1)
+if(c>0):
+    print(min(d))
 else:
-    print(min(b))
+    print(-1)
