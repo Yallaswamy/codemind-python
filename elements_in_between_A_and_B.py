@@ -4,7 +4,6 @@ a=list(map(int,input().split()))
 x,y=map(int,input().split())
 #print(x,y)
 b=[]
-sum=0
 c=0
 for i in a:
     if i in range(x,y+1):
@@ -14,5 +13,4 @@ for i in a:
 if(c==0):
     print(-1)
 else:
-    for i in b:
-        print(i,end=" ")
+    print(*b)
