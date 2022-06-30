@@ -1,12 +1,17 @@
+def rev(n):
+    re=0
+    while(n!=0):
+        r=n%10
+        re=re*10+r
+       # print(re)
+        n=n//10
+    #print(re)
+    return re
 n=int(input())
-a=list(map(int,input().split()))
-rev=0
-for i in a:
-    rev=0
-    while(i!=0):
-        r=i%10
-        rev=rev*10+r
-        i=i//10
-        if(i==0):
-            print(rev,end=" ")
-        
+b=list(map(int,input().split()))
+a=[]
+for i in b:
+    k=rev(i)
+   # print(k)
+    a.append(k)
+print(*a)
