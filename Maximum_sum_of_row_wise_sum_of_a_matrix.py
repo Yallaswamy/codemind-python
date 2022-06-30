@@ -1,15 +1,13 @@
-m,n,=map(int,input().split())
+n,m=map(int,input().split())
 a=[]
-for i in range(m):
+for i in  range(n):
     b=list(map(int,input().split()))
     a.append(b)
-s=0 
-ma=0
-for i in range(m):
-    for j in range(n):
+    s=ma=0
+for i in range(n):
+    for j in range(m):
         s=s+a[i][j]
-    if(s>ma):
+    if(ma<s):
         ma=s
     s=0
 print(ma)
-        
