@@ -1,9 +1,12 @@
 n,m=map(int,input().split())
 a=list(map(int,input().split()))
 b=list(map(int,input().split()))
-e=[]
+c=[]
+d=[]
 for i in a:
-    for j  in b:
-        if i==j not in e :
-            e.append(i)
-print(*(e))
+    if(i  in b):
+        c.append(i)
+for i in c:
+    if(i not in d):
+        d.append(i)
+print(*d)
