@@ -1,8 +1,10 @@
 n=int(input())
 a=list(map(int,input().split()))
-x,y=map(int,input().split())
-sum=0
+b,c=map(int,input().split())
+d=[]
 for i in a:
-    if(i not in range(x,y+1)):
-        sum=sum+i
-print(sum)
+    if(i>=b and i<=c):
+        continue
+    else:
+        d.append(i)
+print(sum(d))
