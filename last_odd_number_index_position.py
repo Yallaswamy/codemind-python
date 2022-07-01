@@ -1,7 +1,9 @@
 n=int(input())
-k=0
 a=list(map(int,input().split()))
-for i in range(0,n):
-    if(a[i]%2!=0):
-        k=i
-print(k)
+b=[]
+for i in range(n):
+    if a[i]%2!=0:
+        b.append(i)
+for i in b[::-1]:
+    print(i)
+    break
