@@ -3,7 +3,10 @@ a=list(map(int,input().split()))
 b=[]
 for i in a:
     a.count(i)
-    if(i not in b):
-        b.append(i)
-for  i in b:
+    for i in a:
+        if( i not in b):
+            b.append(i)
+for i in b:
     print(i,a.count(i),end=" ")
+        
+    
