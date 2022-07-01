@@ -1,12 +1,9 @@
 n=int(input())
 a=list(map(int,input().split()))
-sum=0
+b=sum(a)
+av=b//n
 c=0
-#print(a)
 for i in a:
-    sum=sum+i
-k=int(sum/n)
-for i in a:
-    if(i<=k):
+    if(i<=av):
         c=c+1
 print(c)
