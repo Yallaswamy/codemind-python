@@ -1,6 +1,5 @@
 n=int(input())
 a=list(map(int,input().split()))
-#print(a)
 b=[]
 for i in range(1,n,2):
     for j in range(a[i]):
