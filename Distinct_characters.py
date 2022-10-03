@@ -1,17 +1,9 @@
 n=input()
-n=n.split()
-n="".join(n)
 n=n.lower()
-n=sorted(n)
-b=[]
-
+a=[]
 for i in n:
-    if(i not in b):
-        b.append(i)
-        print(i,end="")
-
-    
-    
-        
-
-
+    if(n.count(i)==1 and i!=" "):
+        a.append(i)
+a=sorted(a)
+a="".join(a)
+print(a)
