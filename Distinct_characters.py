@@ -1,9 +1,8 @@
 n=input()
 n=n.lower()
-a=[]
+n=set(n)
+n=sorted(n)
 for i in n:
-    if(n.count(i)==1 and i!=" "):
-        a.append(i)
-a=sorted(a)
-a="".join(a)
-print(a)
+    if(i==" "):
+        continue
+    print(i,end="")
