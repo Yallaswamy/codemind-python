@@ -1,11 +1,10 @@
 n=input()
-n=n.split()
-n="".join(n)
 n=n.lower()
+z=0
 for i in n:
-    if(n.count(i)==1):
+    if(n.count(i)==1 and i!=" "):
         print(i)
+        z=1
         break
-else:
-    print(-1)
-
+if(z==0):
+    print("-1")
