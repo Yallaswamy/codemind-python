@@ -1,11 +1,11 @@
-n=input()
-#print(n)
-v="AEiOUaeiou"
-c=0
-for  i in n:
-    if(i in v and i!=" "):
-        c=c+1
-    if(i==" "):
-        print(c,end=" ")
-        c=0
-print(c,end=" ")
+n=input().lower()
+n=n.split()
+a="aeiou"
+for i in n:
+    c=0
+    for j in i:
+       if(j in a):
+           c=c+1
+    print(c,end=" ") 
+       
+       
