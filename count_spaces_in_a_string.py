@@ -1,4 +1,4 @@
-n=input()
+n=input().lower()
 c=0
 for i in n:
     if(i==" "):
