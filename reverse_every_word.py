@@ -1,7 +1,4 @@
-n=input()
-m=n.split()
-y=[]
-for i in m:
-    y.append(i[::-1])
-c=" ".join(y)
-print(c)
+n=input().lower()
+n=n.split()
+for i in n:
+    print(i[::-1],end=" ")
