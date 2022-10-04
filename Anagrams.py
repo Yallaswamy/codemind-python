@@ -1,11 +1,10 @@
-n=input()
-m=input()
-for i in n:
-    if(i in m):
-        print(True)
-        break
-      
-    else:
-        print(False)
-        break
-       
+s1=input().lower()
+s2=input().lower()
+s1=list(s1)
+s2=list(s2)
+s1.sort()
+s2.sort()
+if(s1==s2):
+    print(True)
+else:
+    print(False)
