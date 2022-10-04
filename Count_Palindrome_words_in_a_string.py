@@ -1,12 +1,8 @@
-n=input()
-n=n.lower()
-c=0
+n=input().lower()
 n=n.split()
+c=0
+n=list(n)
 for i in n:
-    m=i
-   # print(i)
-    j=i[::-1]
-    #print(j)
-    if(m==j):
+    if(i==i[::-1]):
         c=c+1
 print(c)
