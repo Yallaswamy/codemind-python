@@ -1,13 +1,12 @@
-n=input()
-n=n.lower()
-s=input()
-s=s.lower()
-q=""
-for i in n:
-    if i not in s and i not in q and i!=' ':
-        q+=i
-for i in s:
-    if i not in n and i not in q and i!=' ':
-        q+=i
-x="".join(sorted(q))
+s1=input().lower()
+s2=input().lower()
+a=[]
+for i in s1:
+    if(i not in s2 and i!=" "):
+        a.append(i)
+for i in s2:
+    if(i not in s1 and i!=" "):
+        a.append(i)
+a=set(a)
+x="".join(sorted(a))
 print(x)
