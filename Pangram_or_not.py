@@ -1,11 +1,12 @@
 n=input().lower()
-n=list(n)
-n=set(n)
-c=0
-for i in n:
-    if(i!=" "):
-        c=c+1
-if(c==26):
+a="abcdefghijklmnopqrstuvwxyz "
+f=0
+b=[]
+for i in range(len(n)):
+    if(len(n)>=26 and n[i] in a ):
+        b.append(n[i])
+if(len(n)==len(b)):
     print(True)
 else:
     print(False)
+ 
