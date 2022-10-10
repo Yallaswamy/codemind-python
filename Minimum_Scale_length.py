@@ -1,0 +1,11 @@
+n=int(input())
+a=list(map(int,input().split()))
+k=0
+k=a[0]
+j=1
+while(j<n):
+    if(a[j]%k==0):
+       j+=1
+    else:
+        k=a[j]%k
+print(k)
