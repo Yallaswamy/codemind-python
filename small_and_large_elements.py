@@ -1,9 +1,4 @@
 n=input()
 n=n.split()
-for i in n:
-    x=min(i)
-    break
-for i in n:
-    y=max(i)
-    
-print(x,y)
+x=len(n)
+print(min(n[0]),max(n[x-1]),end=" ")
