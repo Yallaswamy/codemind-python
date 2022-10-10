@@ -1,5 +1,5 @@
 n=input()
-n=n.lower()
-n=n.split()
-n=sorted(n)
-print(*n)
+res=n.split()
+res.sort()
+for i in res:
+    print(i,end=" ")
