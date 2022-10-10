@@ -31,4 +31,3 @@ elif(n-k<s-n):
 else:
     print(s,k)
         
-        
