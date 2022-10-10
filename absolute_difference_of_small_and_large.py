@@ -6,4 +6,4 @@ y=0
 for i in n:
     x=ord(min(i))
     y=ord(max(i))
-    print(abs(y-x),end=" ")
+    print(abs(x-y),end=" ")
