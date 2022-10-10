@@ -1,15 +1,18 @@
 n=input()
-k=""
-c=0
-c1=0
-for i in n:
-    if(i!=" "):
-        k+=i
-x=min(k)
-y=max(k)
-for i in k:
-    if(i==x):
-        c=c+1
-    if(i==y):
-        c1+=1
-print(x,c,y,c1)
+x=ord(n[0])
+z=0
+for i in range(1,len(n)):
+    if n[i]!=' ':
+        if ord(n[i])<x:
+            x=ord(n[i])
+            z=i
+q=n[z]
+y=ord
+r=0
+for i in range(1,len(n)):
+    if n[i]!=' ':
+        if ord(n[i])>x:
+            x=ord(n[i])
+            r=i
+w=n[r]
+print(q,n.count(q),w,n.count(w),end=" ")
